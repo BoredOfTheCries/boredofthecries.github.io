@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Procurement Notes</h1>
+			<p>
+				A personal log of learnings, observations, and day-to-day experiences working in
+				procurement in the UK. Written for my own reference — shared in case it's useful
+				to anyone else.
+			</p>
+			<p><a href="/blog">Read the posts →</a></p>
+		</main>
+		<Footer />
+	</body>
+</html>
